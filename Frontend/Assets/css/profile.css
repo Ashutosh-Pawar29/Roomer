@@ -1,0 +1,101 @@
+body{
+    min-height: 100vh;
+    background-color: #333;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    min-height: 100%;
+}
+.userData,
+.previousData{
+    margin: 4em 2em;
+}
+.userData,
+.history,
+.reviewCard{
+    box-shadow: 5px 7px 11px 3px #d0cbcb78;
+    border-radius: 20px;
+    background-color: #c6a46e;
+}
+.history{
+    padding: 20px;
+}
+.main_page{
+    background-color: #3f3d3a;
+}
+
+.userImage{
+    text-align: center;
+    font-size: 2em;
+}
+
+.userImg{
+    transform: translateY(-2em);
+    width: 70%;
+    filter: drop-shadow(10px 10px 20px rgba(38, 33, 33, 0.5));
+}
+.userInfo{
+    padding: 0 2em;
+    font-size: 1.5em;
+    justify-content: center;
+}
+.infoIcon{
+    height: 35px;
+}
+.info{
+    align-items: center;
+    gap: 5px;
+    display: flex;
+}
+
+hr{
+    background-color: black;
+    color: black;
+}
+
+.userData:hover,
+.history:hover,
+.reviews:hover{
+    transform: translateY(-1em);
+    transition: transform 0.3s;
+}
+
+.previousData{
+    /* padding: 1em; */
+    display: grid;
+    gap: 2em;
+}
+.previousDataTitle{
+    font-size: 2em;
+}
+.previousDataContent{
+    display: grid;
+    gap: auto;
+}
+.previousDataContent div{
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.reviewCard {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid ;
+    background-color: #333;
+    color: white;
+    box-shadow: 5px 7px 11px 3px #d0cbcb78;
+    border-radius: 30px;
+}
+
+.theReview,
+.roomDetails {
+    flex: 1; /* Equal distribution of height */
+}
+.roomDetails{
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+}
